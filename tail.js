@@ -18,3 +18,10 @@ const tail = function(x) {
 };
 
 console.log(tail([3, 4, 5]));
+
+//TEST CASE
+const result = tail(["Hello", "Lighthouse", "Labs"]);// creating a new var to hold the array makes it easier to call in a test case!
+assertEqual(result.length, 2); // ensure we get back two elements
+assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
+assertEqual(result[1], "Labs");
+assertEqual(result[0], "Labs")
