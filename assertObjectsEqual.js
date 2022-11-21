@@ -54,3 +54,5 @@ assertObjectsEqual(cd, dc); // => T
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
 assertObjectsEqual(cd, cd2); // => F
+
+module.exports = assertObjectsEqual;
