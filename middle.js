@@ -1,21 +1,5 @@
-// TEST/ASSERTION FUNCTIONS
-const eqArrays = function(array1, array2) {
-  for (let i=0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false
-    } 
-  }
-  return true
-}
-
-
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log(`✅ 🌶 Assertion passed: ${array1} === ${array2}`);
-  } else {
-    console.log(`❌ 🤌 Assertion Failed: ${array1} !== ${array2}`);
-  }
-}
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual')
 
 // ACTUAL FUNCTION
 const middle = function(array) {
@@ -34,12 +18,4 @@ const middle = function(array) {
 return(newArray); //return array, if array < 2 then return blank array
 }
 
-// TEST CODE
-middle([1, 2])
-middle([1, 2, 3]) // odd
-middle([1, 2, 3, 4, 5]) // odd
-middle([1, 2, 3, 4]) // even
-middle([1, 2, 3, 4, 5, 6]) // even
-
-
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7]), middle([1, 2, 3, 4, 5, 6, 7]));
+module.exports = middle;
