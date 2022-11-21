@@ -17,11 +17,15 @@ const eqObjects = require('./eqObjects');
 
 module.exports = {head, tail, middle, assertArraysEqual, assertEqual, eqArrays, countOnly, countLetters, findKey, findKeyByValue, letterPositions, map, takeUntil, without, eqObjects};
 
-// DONE SECTION
+
 //head
 //tail
 //middle
 //eqArrays
+//assertArraysEqual
+//assertEqual
+
+
 //countOnly
 //countLetters
 //findKey
@@ -32,5 +36,4 @@ module.exports = {head, tail, middle, assertArraysEqual, assertEqual, eqArrays, 
 //without
 //eqObjects
 
-// NOT DONE
-//flatten
+

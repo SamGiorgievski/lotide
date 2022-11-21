@@ -15,7 +15,3 @@ console.log(JSON.stringify(newObject));
 }
 
 module.exports = countLetters;
-
-// test cases
-countLetters("Hello!");
-countLetters("HeYYYYyyyyy hiIIIii hEllooo");
