@@ -1,14 +1,4 @@
-// assertEqual
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ 🌶 Assertion passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌ 🤌 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-assertEqual("Lighthouse Labs", "Lighthouse Labs");
-assertEqual(1, 0);
+const assertEqual = require('./assertEqual');
 
 // countOnly function
 const countOnly = function(allItems, itemsToCount) {
@@ -26,6 +16,7 @@ const countOnly = function(allItems, itemsToCount) {
 return results;
 }
 
+module.exports = countOnly;
 
 // test
 const firstNames = [

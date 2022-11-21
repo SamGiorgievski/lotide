@@ -13,6 +13,8 @@ const takeUntil = function(array, callback) {
   return returnArray;
 }
 
+module.exports = takeUntil;
+
 //examples
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
